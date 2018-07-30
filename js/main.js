@@ -84,3 +84,93 @@ if (mainSortingToggle) {
     });
   }
 }
+
+// catalog navigation sublists open
+var catalogNavToggles = document.querySelectorAll('.catalog-nav__link--submenu');
+
+if (catalogNavToggles) {
+  var catalogNavSublists = document.querySelectorAll('.catalog-nav__sublist');
+  
+  for (var i = 0; i < catalogNavToggles.length; i++) {
+    catalogNavToggles[i].setAttribute('data-index', i);
+    
+    catalogNavToggles[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      var catalogNavIndex = evt.currentTarget.getAttribute('data-index');
+      this.classList.toggle('catalog-nav__link--active');
+      catalogNavSublists[catalogNavIndex].classList.toggle('catalog-nav__sublist--visible');
+    });
+  }
+}
+
+// search form open
+var searchFormToggle = document.querySelector('.search__open-button');
+
+if (searchFormToggle) {
+  var searchForm = document.querySelector('.search');
+  
+  searchFormToggle.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    searchForm.classList.toggle('search--open');
+  });
+}
+
+// toggle amount buttons
+var viewAmountToggles = document.querySelectorAll('.view__amount-toggle');
+
+if (viewAmountToggles) {
+  var deleteViewAmountToggleActiveClass = function () {
+    var viewAmountToggleActive = document.querySelector('.view__amount-toggle--active');
+
+    if (viewAmountToggleActive !== null) {
+      viewAmountToggleActive.classList.remove('view__amount-toggle--active');
+    }
+  };
+
+  for (var i = 0; i < viewAmountToggles.length; i++) {
+    viewAmountToggles[i].addEventListener('click', function(evt) {
+      evt.preventDefault();
+      deleteViewAmountToggleActiveClass();
+      this.classList.add('view__amount-toggle--active');
+    })
+  };
+}
+
+// toggle catalog layout
+var layoutToggles = document.querySelectorAll('.view__layout-toggle');
+
+if (layoutToggles) {
+  var layoutToggleTile = document.querySelector('.view__layout-toggle--tile');
+  var layoutToggleList = document.querySelector('.view__layout-toggle--list');
+  var catalogItems = document.querySelectorAll('.catalog__item');
+  
+  var deleteLayoutTogglesActiveClass = function () {
+    var layoutTogglesActive = document.querySelector('.view__layout-toggle--active');
+
+    if (layoutTogglesActive !== null) {
+      layoutTogglesActive.classList.remove('view__layout-toggle--active');
+    }
+  };
+
+  for (var i = 0; i < layoutToggles.length; i++) {
+    layoutToggles[i].addEventListener('click', function(evt) {
+      evt.preventDefault();
+      deleteLayoutTogglesActiveClass();
+      this.classList.add('view__layout-toggle--active');
+      
+      var layoutTogglesActive = document.querySelector('.view__layout-toggle--active');
+      
+      if (layoutTogglesActive.classList.contains('view__layout-toggle--tile')) {
+        for (var i = 0; i < catalogItems.length; i++) {
+          catalogItems[i].classList.remove('catalog__item--row');
+        }
+      }
+      
+      if (layoutTogglesActive.classList.contains('view__layout-toggle--list')) {
+        for (var i = 0; i < catalogItems.length; i++) {
+          catalogItems[i].classList.add('catalog__item--row');
+        }
+      }
+    })
+  };
+}
