@@ -156,6 +156,16 @@
             <b class="banner__amount">255 товаров</b>
             <p class="banner__text">Компания Global Foods в течение многих лет является одним из лидеров российского рынка поставок продуктов питания и сопутствующих товаров в сегмент HoReCa.</p>
           </div>
+          <div class="main__banner  banner  banner--hidden  banner--grocery">
+            <h1 class="banner__title">Бакалея</h1>
+            <b class="banner__amount">255 товаров</b>
+            <p class="banner__text">Компания Global Foods в течение многих лет является одним из лидеров российского рынка поставок продуктов питания и сопутствующих товаров в сегмент HoReCa.</p>
+          </div>
+          <div class="main__banner  banner  banner--hidden  banner--spicy">
+            <h1 class="banner__title">Для острого</h1>
+            <b class="banner__amount">25 товаров</b>
+            <p class="banner__text">Компания Global Foods в течение многих лет является одним из лидеров российского рынка поставок продуктов питания и сопутствующих товаров в сегмент HoReCa.</p>
+          </div>
           <div class="main__filter  filter">
             <div class="filter__container">
               <div class="filter__content">
@@ -165,19 +175,40 @@
                 <ul class="filter__list">
                   <li class="filter__item">
                     <a href="#" class="filter__type">Цена</a>
-                    
+                    <div class="filter__type-list  filter__type-list--no-border">
+                      <p class="filter__type-price">
+                        <input type="text" class="input" value="100">
+                        <span class="filter__type-dash">–</span>
+                        <input type="text" class="input" value="900">
+                        <span class="filter__type-rouble">₽</span>
+                      </p>
+                      <div class="filter__type-range">
+                        <div class="filter__type-scale"></div>
+                        <div class="filter__type-bar"></div>
+                        <button class="filter__type-range-control  filter__type-range-control--min  btn" type="button"></button>
+                        <button class="filter__type-range-control  filter__type-range-control--max  btn" type="button"></button>
+                      </div>
+                      <button class="filter__type-btn  btn  btn--yellow  btn--centered"  type="button">Применить</button>
+                    </div>
                   </li>
                   <li class="filter__item">
                     <a href="#" class="filter__type">Производитель</a>
                     <ul class="filter__type-list">
                       <li class="filter__type-item">
-                        <a href="#" class="filter__type-link">Производитель</a>
+                        <input type="checkbox" class="visually-hidden" checked id="producer-1" name="producer-1">
+                        <label for="producer-1" class="label">Россия</label>
                       </li>
                       <li class="filter__type-item">
-                        <a href="#" class="filter__type-link">Производитель</a>
+                        <input type="checkbox" class="visually-hidden" disabled id="producer-2" name="producer-2">
+                        <label for="producer-2" class="label">Беларусь</label>
                       </li>
                       <li class="filter__type-item">
-                        <a href="#" class="filter__type-link">Производитель</a>
+                        <input type="checkbox" class="visually-hidden" id="producer-3" name="producer-3">
+                        <label for="producer-3" class="label">Казахстан</label>
+                      </li>
+                      <li class="filter__type-item">
+                        <input type="checkbox" class="visually-hidden" id="producer-4" name="producer-4">
+                        <label for="producer-4" class="label">Италия</label>
                       </li>
                     </ul>
                   </li>
@@ -185,13 +216,16 @@
                     <a href="#" class="filter__type">Условия хранения</a>
                     <ul class="filter__type-list">
                       <li class="filter__type-item">
-                        <a href="#" class="filter__type-link">Условия хранения</a>
+                        <input type="checkbox" class="visually-hidden" id="conditions-1" name="conditions-1">
+                        <label for="conditions-1" class="label">Условия хранения</label>
                       </li>
                       <li class="filter__type-item">
-                        <a href="#" class="filter__type-link">Условия хранения</a>
+                        <input type="checkbox" class="visually-hidden" checked id="conditions-2" name="conditions-2">
+                        <label for="conditions-2" class="label">Условия хранения</label>
                       </li>
                       <li class="filter__type-item">
-                        <a href="#" class="filter__type-link">Условия хранения</a>
+                        <input type="checkbox" class="visually-hidden" id="conditions-3" name="conditions-3">
+                        <label for="conditions-3" class="label">Условия хранения</label>
                       </li>
                     </ul>
                   </li>
@@ -202,11 +236,11 @@
                   <h3 class="sorting__title">Сортировать:</h3>
                   <a href="#" class="sorting__toggle">По популярности</a><!--sorting__toggle--active-->
                 </div>
-                <div class="sorting__options">
-                  <a href="#" class="sorting__type">По популярности</a>
-                  <a href="#" class="sorting__type">По возрастанию цены</a>
-                  <a href="#" class="sorting__type">По убыванию цены</a>
-                  <a href="#" class="sorting__type">По новинкам</a>
+                <div class="sorting__options"><!--sorting__options--visible-->
+                  <a href="#" class="sorting__type">По&nbsp;популярности</a>
+                  <a href="#" class="sorting__type">По&nbsp;возрастанию&nbsp;цены</a>
+                  <a href="#" class="sorting__type">По&nbsp;убыванию&nbsp;цены</a>
+                  <a href="#" class="sorting__type">По&nbsp;новинкам</a>
                 </div>
               </div>
               <div class="filter__total">
@@ -778,7 +812,7 @@
           </section>
           <div class="main__banner  banner  banner--find">
             <h4 class="banner__subtitle">Не нашли нужный товар в каталоге? Мы&nbsp;найдем и привезем</h4>
-            <a href="#" class="banner__link  btn  btn--yellow">Оформить заявку</a>
+            <a href="#" class="banner__link  btn  btn--centered  btn--yellow-reverse">Оформить заявку</a>
           </div>
           <article class="main__article  article">
             <h2 class="article__title">Текст для продвижения</h2>
@@ -991,7 +1025,7 @@
         <div class="page-footer__container  container">
           <div class="page-footer__logo  logo">
             <a href="index.html">
-              <img src="img/logo-mobile.png" alt="логотип, перейти на главную страницу" width="139" height="31">
+              <img src="img/logo-footer.png" alt="логотип, перейти на главную страницу" width="232" height="52">
             </a>
           </div>
           <div class="page-footer__nav  nav">
