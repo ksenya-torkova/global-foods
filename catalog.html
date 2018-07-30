@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="robots" content="noindex, follow">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/pt-sans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pt-sans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <title>Global Foods: catalog</title>
+    <script>
+      document.createElement('picture');
+    </script>
+  </head>
+  
+  <body>
+    <header class="page-header">
+      <div class="page-header__container  container">
+        <div class="page-header__logo  logo">
+          <a href="index.html">
+            <picture>
+              <source srcset="img/logo.png" media="(min-width: 1024px)">
+              <img src="img/logo-mobile.png" alt="логотип, перейти на главную страницу" width="139" height="31">
+            </picture>
+          </a>
+        </div>
+        <div class="page-header__location  location">
+          <div class="location__header">
+            <p class="location__title">Ваш город:</p>
+            <select class="location__select">
+              <option value="" selected>Санкт-Петербург</option>
+              <option value="">Ваш город</option>
+              <option value="">Ваш город</option>
+              <option value="">Ваш город</option>
+              <option value="">Ваш город</option>
+            </select>
+            <a href="tel:+74992716552" class="location__phone">+7 (499) 271-65-52</a>
+          </div>
+        </div>
+        <div class="page-header__contacts  contacts">
+          <p class="contacts__phone">
+            <span>Центральный офис</span>
+            <a href="tel:+74957811144">+7 (495) 781-11-44</a>
+          </p>
+          <p class="contacts__mail">
+            <a href="mailto:info@globalfoods.ru">info@globalfoods.ru</a>
+          </p>
+        </div>
+        <div class="page-header__feedback  feedback">
+          <a href="#" class="feedback__open-link">Обратная связь</a>
+        </div>
+        <form action="#" class="page-header__form  search">
+          <input type="text" placeholder="Искать в каталоге" class="search__input  input">
+          <a href="#" class="search__open-button  btn">
+            <span class="visually-hidden">показать поисковую строку</span>
+          </a>
+          <button class="visually-hidden  search__submit-btn  btn" type="submit">отправить запрос</button>
+        </form>
+        <div class="page-header__user  user">
+          <a href="#" class="user__link">
+            <span class="visually-hidden">перейти в профиль</span>
+          </a>
+        </div>
+        <div class="page-header__cart  cart">
+          <a href="#" class="cart__link">
+            <span class="cart__amount">12</span>
+          </a>
+        </div>
+        <nav class="page-header__nav  nav">
+          <button class="nav__btn  btn" type="button"><!--nav__btn--cross-->
+            <span class="visually-hidden">показать основное меню</span>
+          </button>
+          <ul class="nav__list"><!--nav__list--visible-->
+            <li class="nav__item">
+              <a href="#" class="nav__link  nav__link--submenu">Каталог товаров</a>
+              <ul class="nav__sublist">
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Овощи и фрукты</a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Мясные продукты</a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Бакалея</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link  nav__link--submenu">О компании</a><!--nav__link--open-->
+              <ul class="nav__sublist"><!--nav__sublist--visible-->
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">О нас</a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Корпоративная структура</a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">География компании</a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Награды и благодарности</a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Сервис</a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Новости</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Карьера</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link  nav__link--submenu">Литература</a>
+              <ul class="nav__sublist">
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Литература</a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Литература</a>
+                </li>
+                <li class="nav__subitem">
+                  <a href="#" class="nav__sublink">Литература</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Условия работы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Закупки</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container">
+        <div class="main__content  wrapper">
+          <ul class="main__breadcrumbs  breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link  breadcrumbs__link--active">Мясные продукты</a>
+            </li>
+          </ul>
+          <div class="main__banner  banner  banner--vegetables">
+            <h1 class="banner__title">Овощи и фрукты</h1>
+            <b class="banner__amount">255 товаров</b>
+            <p class="banner__text">Компания Global Foods в течение многих лет является одним из лидеров российского рынка поставок продуктов питания и сопутствующих товаров в сегмент HoReCa.</p>
+          </div>
+          <div class="main__filter  filter">
+            <div class="filter__container">
+              <div class="filter__content">
+                <h3 class="filter__title">
+                  <a href="#" class="filter__toggle">Фильтр по параметрам</a>
+                </h3>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <a href="#" class="filter__type">Цена</a>
+                    
+                  </li>
+                  <li class="filter__item">
+                    <a href="#" class="filter__type">Производитель</a>
+                    <ul class="filter__type-list">
+                      <li class="filter__type-item">
+                        <a href="#" class="filter__type-link">Производитель</a>
+                      </li>
+                      <li class="filter__type-item">
+                        <a href="#" class="filter__type-link">Производитель</a>
+                      </li>
+                      <li class="filter__type-item">
+                        <a href="#" class="filter__type-link">Производитель</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="filter__item">
+                    <a href="#" class="filter__type">Условия хранения</a>
+                    <ul class="filter__type-list">
+                      <li class="filter__type-item">
+                        <a href="#" class="filter__type-link">Условия хранения</a>
+                      </li>
+                      <li class="filter__type-item">
+                        <a href="#" class="filter__type-link">Условия хранения</a>
+                      </li>
+                      <li class="filter__type-item">
+                        <a href="#" class="filter__type-link">Условия хранения</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="main__sorting  sorting">
+                <div class="sorting__header">
+                  <h3 class="sorting__title">Сортировать:</h3>
+                  <a href="#" class="sorting__toggle">По популярности</a><!--sorting__toggle--active-->
+                </div>
+                <div class="sorting__options">
+                  <a href="#" class="sorting__type">По популярности</a>
+                  <a href="#" class="sorting__type">По возрастанию цены</a>
+                  <a href="#" class="sorting__type">По убыванию цены</a>
+                  <a href="#" class="sorting__type">По новинкам</a>
+                </div>
+              </div>
+              <div class="filter__total">
+                <p>Товаров: </p>
+                <output>23</output>
+              </div>
+              <div class="main__view  view">
+                <div class="view__container">
+                  <div class="view__layout">
+                    <button class="view__layout-toggle  view__layout-toggle--active  btn" type="button">
+                      <span class="visually-hidden">товары плиткой</span>
+                    </button>
+                    <button class="view__layout-toggle  btn" type="button">
+                      <span class="visually-hidden">товары списком</span>
+                    </button>
+                  </div>
+                  <div class="view__amount">
+                    <p class="view__amount-text">Показывать по:</p>
+                    <button class="view__amount-toggle  view__amount-toggle--active  btn" type="button">12</button>
+                    <button class="view__amount-toggle  btn" type="button">24</button>
+                    <button class="view__amount-toggle  btn" type="button">36</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="main__catalog  catalog">
+            <h2 class="visually-hidden">Список товаров каталога</h2>
+            <ul class="catalog__list">
+              <li class="catalog__item  catalog__item--authorized  catalog__item--pre-order">
+                <div class="catalog__container">
+                  <img src="img/goods-001.jpg" alt="товар" class="catalog__img" width="109" height="121">
+                  <div class="catalog__column">
+                    <div class="catalog__description">
+                      <div class="catalog__features">
+                        <div class="catalog__features-item  catalog__features-item--leader">
+                          <span>Лидер продаж</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--best-price">
+                          <span>Лучшая цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--special-offer">
+                          <span>Спецпредложение</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--shock-price">
+                          <span>Шок-цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--new">
+                          <span>Новинка</span>
+                        </div>
+                      </div>
+                      <div class="catalog__header">
+                        <div class="catalog__header-column">
+                          <h2 class="catalog__item-title"><a href="#">Говядина, стриплойн (тонкий край) Striploin</a></h2>
+                          <div class="catalog__rating">
+                            <button class="catalog__rating-btn  btn" type="button">
+                              <span class="visually-hidden">оценка товара</span>
+                            </button>
+                            <output>5,0</output>
+                          </div>
+                          <div class="catalog__item-info">
+                            <p class="catalog__item-code">
+                              <span>Код: </span>
+                              <output>00012331</output>
+                            </p>
+                            <p class="catalog__item-code">
+                              <span>Штрих-код: </span>
+                              <output>00012331</output>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="catalog__details">
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-text">4-6 кг</p>
+                            <p class="catalog__details-text">18°С</p>
+                            <p class="catalog__details-text">Россия</p>
+                          </div>
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-item  catalog__details-item--1">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--2">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--3">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__row">
+                      <div class="catalog__amount">
+                        <div class="catalog__available">
+                          <p class="catalog__available-amount">
+                            <output>234</output> шт.
+                          </p>
+                          <div class="catalog__amount-indicator">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <p class="catalog__amount-minimum">
+                          Мин. заказ 
+                          <output>10 кг</output>
+                        </p>
+                        <p class="catalog__price">2 535.10 <span>₽</span></p>
+                      </div>
+                      <div class="catalog__btns">
+                        <p class="catalog__authorization-note">Чтобы видеть цены и&nbsp;купить товар</p>
+                        <div class="catalog__quantity">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--minus  btn">
+                            <span class="visually-hidden">уменьшить количество</span>
+                          </button>
+                          <input type="text" class="catalog__quantity-value  input" value="345">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--plus  btn">
+                            <span class="visually-hidden">увеличить количество</span>
+                          </button>
+                        </div>
+                        <a href="#" class="catalog__order  btn  btn--yellow">Предзаказ</a>
+                        <a href="#" class="catalog__authorization  btn  btn--yellow">Авторизуйтесь</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="catalog__container">
+                  <img src="img/goods-002.jpg" alt="товар" class="catalog__img" width="109" height="121">
+                  <div class="catalog__column">
+                    <div class="catalog__description">
+                      <div class="catalog__features">
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--leader">
+                          <span>Лидер продаж</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--best-price">
+                          <span>Лучшая цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--special-offer">
+                          <span>Спецпредложение</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--shock-price">
+                          <span>Шок-цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--new">
+                          <span>Новинка</span>
+                        </div>
+                      </div>
+                      <div class="catalog__header">
+                        <div class="catalog__header-column">
+                          <h2 class="catalog__item-title"><a href="#">Говядина, стриплойн (тонкий край) Striploin</a></h2>
+                          <div class="catalog__rating">
+                            <button class="catalog__rating-btn  btn" type="button">
+                              <span class="visually-hidden">оценка товара</span>
+                            </button>
+                            <output>5,0</output>
+                          </div>
+                          <div class="catalog__item-info">
+                            <p class="catalog__item-code">
+                              <span>Код: </span>
+                              <output>00012331</output>
+                            </p>
+                            <p class="catalog__item-code">
+                              <span>Штрих-код: </span>
+                              <output>00012331</output>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="catalog__details">
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-text">4-6 кг</p>
+                            <p class="catalog__details-text">18°С</p>
+                            <p class="catalog__details-text">Россия</p>
+                          </div>
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-item  catalog__details-item--1">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--2">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--3">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__row">
+                      <div class="catalog__amount">
+                        <div class="catalog__available">
+                          <p class="catalog__available-amount">
+                            <output>234</output> шт.
+                          </p>
+                          <div class="catalog__amount-indicator  catalog__amount-indicator--many">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <p class="catalog__amount-minimum">
+                          Мин. заказ 
+                          <output>10 кг</output>
+                        </p>
+                        <p class="catalog__price">2 535.10 <span>₽</span></p>
+                      </div>
+                      <div class="catalog__btns">
+                        <p class="catalog__authorization-note">Чтобы видеть цены и&nbsp;купить товар</p>
+                        <div class="catalog__quantity">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--minus  btn">
+                            <span class="visually-hidden">уменьшить количество</span>
+                          </button>
+                          <input type="text" class="catalog__quantity-value  input" value="345">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--plus  btn">
+                            <span class="visually-hidden">увеличить количество</span>
+                          </button>
+                        </div>
+                        <a href="#" class="catalog__order  btn  btn--yellow">В корзину</a>
+                        <a href="#" class="catalog__authorization  btn  btn--yellow">Авторизуйтесь</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item  catalog__item--row">
+                <div class="catalog__container">
+                  <img src="img/goods-003.jpg" alt="товар" class="catalog__img" width="109" height="121">
+                  <div class="catalog__column">
+                    <div class="catalog__description">
+                      <div class="catalog__features">
+                        <div class="catalog__features-item  catalog__features-item--leader">
+                          <span>Лидер продаж</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--best-price">
+                          <span>Лучшая цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--special-offer">
+                          <span>Спецпредложение</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--shock-price">
+                          <span>Шок-цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--new">
+                          <span>Новинка</span>
+                        </div>
+                      </div>
+                      <div class="catalog__header">
+                        <div class="catalog__header-column">
+                          <h2 class="catalog__item-title"><a href="#">Говядина, стриплойн (тонкий край) Striploin</a></h2>
+                          <div class="catalog__rating">
+                            <button class="catalog__rating-btn  btn" type="button">
+                              <span class="visually-hidden">оценка товара</span>
+                            </button>
+                            <output>5,0</output>
+                          </div>
+                          <div class="catalog__item-info">
+                            <p class="catalog__item-code">
+                              <span>Код: </span>
+                              <output>00012331</output>
+                            </p>
+                            <p class="catalog__item-code">
+                              <span>Штрих-код: </span>
+                              <output>00012331</output>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="catalog__details">
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-text">4-6 кг</p>
+                            <p class="catalog__details-text">18°С</p>
+                            <p class="catalog__details-text">Россия</p>
+                          </div>
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-item  catalog__details-item--1">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--2">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--3">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__row">
+                      <div class="catalog__amount">
+                        <div class="catalog__available">
+                          <p class="catalog__available-amount">
+                            <output>234</output> шт.
+                          </p>
+                          <div class="catalog__amount-indicator  catalog__amount-indicator--middle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <p class="catalog__amount-minimum">
+                          Мин. заказ 
+                          <output>10 кг</output>
+                        </p>
+                        <p class="catalog__price">2 535.10 <span>₽</span></p>
+                      </div>
+                      <div class="catalog__btns">
+                        <p class="catalog__authorization-note">Чтобы видеть цены и&nbsp;купить товар</p>
+                        <div class="catalog__quantity">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--minus  btn">
+                            <span class="visually-hidden">уменьшить количество</span>
+                          </button>
+                          <input type="text" class="catalog__quantity-value  input" value="345">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--plus  btn">
+                            <span class="visually-hidden">увеличить количество</span>
+                          </button>
+                        </div>
+                        <a href="#" class="catalog__order  btn  btn--yellow">В корзину</a>
+                        <a href="#" class="catalog__authorization  btn  btn--yellow">Авторизуйтесь</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item  catalog__item--row  catalog__item--authorized">
+                <div class="catalog__container">
+                  <img src="img/goods-005.jpg" alt="товар" class="catalog__img" width="109" height="121">
+                  <div class="catalog__column">
+                    <div class="catalog__description">
+                      <div class="catalog__features">
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--leader">
+                          <span>Лидер продаж</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--best-price">
+                          <span>Лучшая цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--special-offer">
+                          <span>Спецпредложение</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--shock-price">
+                          <span>Шок-цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--new">
+                          <span>Новинка</span>
+                        </div>
+                      </div>
+                      <div class="catalog__header">
+                        <div class="catalog__header-column">
+                          <h2 class="catalog__item-title"><a href="#">Говядина, стриплойн (тонкий край) Striploin</a></h2>
+                          <div class="catalog__rating">
+                            <button class="catalog__rating-btn  btn" type="button">
+                              <span class="visually-hidden">оценка товара</span>
+                            </button>
+                            <output>5,0</output>
+                          </div>
+                          <div class="catalog__item-info">
+                            <p class="catalog__item-code">
+                              <span>Код: </span>
+                              <output>00012331</output>
+                            </p>
+                            <p class="catalog__item-code">
+                              <span>Штрих-код: </span>
+                              <output>00012331</output>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="catalog__details">
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-text">4-6 кг</p>
+                            <p class="catalog__details-text">18°С</p>
+                            <p class="catalog__details-text">Россия</p>
+                          </div>
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-item  catalog__details-item--1">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--2">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--3">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__row">
+                      <div class="catalog__amount">
+                        <div class="catalog__available">
+                          <p class="catalog__available-amount">
+                            <output>234</output> шт.
+                          </p>
+                          <div class="catalog__amount-indicator  catalog__amount-indicator--many">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <p class="catalog__amount-minimum">
+                          Мин. заказ 
+                          <output>10 кг</output>
+                        </p>
+                        <p class="catalog__price">2 535.10 <span>₽</span></p>
+                      </div>
+                      <div class="catalog__btns">
+                        <p class="catalog__authorization-note">Чтобы видеть цены и&nbsp;купить товар</p>
+                        <div class="catalog__quantity">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--minus  btn">
+                            <span class="visually-hidden">уменьшить количество</span>
+                          </button>
+                          <input type="text" class="catalog__quantity-value  input" value="345">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--plus  btn">
+                            <span class="visually-hidden">увеличить количество</span>
+                          </button>
+                        </div>
+                        <a href="#" class="catalog__order  btn  btn--yellow">В корзину</a>
+                        <a href="#" class="catalog__authorization  btn  btn--yellow">Авторизуйтесь</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item  catalog__item--authorized">
+                <div class="catalog__container">
+                  <img src="img/goods-001.jpg" alt="товар" class="catalog__img" width="109" height="121">
+                  <div class="catalog__column">
+                    <div class="catalog__description">
+                      <div class="catalog__features">
+                        <div class="catalog__features-item  catalog__features-item--leader">
+                          <span>Лидер продаж</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--best-price">
+                          <span>Лучшая цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--special-offer">
+                          <span>Спецпредложение</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--shock-price">
+                          <span>Шок-цена</span>
+                        </div>
+                        <div class="catalog__features-item  catalog__features-item--visible  catalog__features-item--new">
+                          <span>Новинка</span>
+                        </div>
+                      </div>
+                      <div class="catalog__header">
+                        <div class="catalog__header-column">
+                          <h2 class="catalog__item-title"><a href="#">Говядина, стриплойн (тонкий край) Striploin</a></h2>
+                          <div class="catalog__rating">
+                            <button class="catalog__rating-btn  btn" type="button">
+                              <span class="visually-hidden">оценка товара</span>
+                            </button>
+                            <output>5,0</output>
+                          </div>
+                          <div class="catalog__item-info">
+                            <p class="catalog__item-code">
+                              <span>Код: </span>
+                              <output>00012331</output>
+                            </p>
+                            <p class="catalog__item-code">
+                              <span>Штрих-код: </span>
+                              <output>00012331</output>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="catalog__details">
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-text">4-6 кг</p>
+                            <p class="catalog__details-text">18°С</p>
+                            <p class="catalog__details-text">Россия</p>
+                          </div>
+                          <div class="catalog__details-row">
+                            <p class="catalog__details-item  catalog__details-item--1">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--2">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                            <p class="catalog__details-item  catalog__details-item--3">
+                              с/м
+                              <span class="catalog__details-baloon">свежемороженное</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__row">
+                      <div class="catalog__amount">
+                        <div class="catalog__available">
+                          <p class="catalog__available-amount">
+                            <output>234</output> шт.
+                          </p>
+                          <div class="catalog__amount-indicator  catalog__amount-indicator--few">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <p class="catalog__amount-minimum">
+                          Мин. заказ 
+                          <output>10 кг</output>
+                        </p>
+                        <p class="catalog__price">2 535.10 <span>₽</span></p>
+                      </div>
+                      <div class="catalog__btns">
+                        <p class="catalog__authorization-note">Чтобы видеть цены и&nbsp;купить товар</p>
+                        <div class="catalog__quantity">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--minus  btn">
+                            <span class="visually-hidden">уменьшить количество</span>
+                          </button>
+                          <input type="text" class="catalog__quantity-value  input" value="345">
+                          <button type="button" class="catalog__quantity-btn  catalog__quantity-btn--plus  btn">
+                            <span class="visually-hidden">увеличить количество</span>
+                          </button>
+                        </div>
+                        <a href="#" class="catalog__order  btn  btn--yellow">В корзину</a>
+                        <a href="#" class="catalog__authorization  btn  btn--yellow">Авторизуйтесь</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="catalog__more  btn  btn--centered  btn--white">Показать еще</a>
+            <ul class="catalog__paginator paginator">
+              <li class="paginator__item">
+                <a href="#" class="paginator__link  paginator__link--prev"></a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link">1</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link">2</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link">3</a>
+              </li>
+              <li class="paginator__item">
+                <a class="paginator__link  paginator__link--active">4</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link">5</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link">6</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link">7</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link">8</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link  paginator__link--next"></a>
+              </li>
+            </ul>
+          </section>
+          <div class="main__banner  banner  banner--find">
+            <h4 class="banner__subtitle">Не нашли нужный товар в каталоге? Мы&nbsp;найдем и привезем</h4>
+            <a href="#" class="banner__link  btn  btn--yellow">Оформить заявку</a>
+          </div>
+          <article class="main__article  article">
+            <h2 class="article__title">Текст для продвижения</h2>
+            <p class="article__text">Компания Global Foods в течение многих лет является одним из лидеров российского рынка поставок продуктов питания и сопутствующих товаров в сегмент HoReCa. Мы предоставляем профессиональные консультации по использованию поставляемой продукции, организуем обучающие семинары, знакомим с новинками рынка, информируем о специальных акциях и программах от производителей.</p>
+            <p class="article__text">Многолетний опыт работы, устойчивые связи с поставщиками позволяют поддерживать регулярный ассортимент, свыше 1500 наименований, включающий в себя лучшие продукты со всего мира по самым конкурентным ценам. Требования сегодняшнего рынка – стабильное и высокое качество продукции и сервиса.</p>
+          </article>
+        </div>
+        <aside class="catalog-nav">
+          <ul class="catalog-nav__list">
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link">Подборки</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link">Специальные предложения</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Мясные продукты</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Мясные продукты</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Мясные продукты</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Мясные продукты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Рыба и морепродукты</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Рыба и морепродукты</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Рыба и морепродукты</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Рыба и морепродукты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu  catalog-nav__link--active">Молочные продукты</a>
+              <ul class="catalog-nav__sublist  catalog-nav__sublist--opened">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink  catalog-nav__sublink--active">Масло сливочное</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Молочнокислые продукты</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Мороженое</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Сливки</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Сыр</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Кондитерские товары и ингредиенты</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Кондитерские товары и ингредиенты</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Кондитерские товары и ингредиенты</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Кондитерские товары и ингредиенты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Специи, приправы</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Специи, приправы</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Специи, приправы</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Специи, приправы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Продукты для&nbsp;японской&nbsp;кухни</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Продукты для японской кухни</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Продукты для японской кухни</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Продукты для японской кухни</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Овощи и Фрукты</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Овощи и Фрукты</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Овощи и Фрукты</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Овощи и Фрукты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Бакалея</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Бакалея</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Бакалея</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Бакалея</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Хлеб и тесто</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Хлеб и тесто</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Хлеб и тесто</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Хлеб и тесто</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Напитки</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Напитки</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Напитки</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Напитки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Масла</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Масла</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Масла</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Масла</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Бульоны, супы, пюре, соусы</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Бульоны, супы, пюре, соусы</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Бульоны, супы, пюре, соусы</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Бульоны, супы, пюре, соусы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-nav__item">
+              <a href="#" class="catalog-nav__link  catalog-nav__link--submenu">Сопутствующие товары</a>
+              <ul class="catalog-nav__sublist">
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Сопутствующие товары</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Сопутствующие товары</a>
+                </li>
+                <li class="catalog-nav__subitem">
+                  <a href="#" class="catalog-nav__sublink">Сопутствующие товары</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__row  page-footer__row--mobile-hidden">
+        <div class="page-footer__container  container">
+          <div class="page-footer__logo  logo">
+            <a href="index.html">
+              <img src="img/logo-mobile.png" alt="логотип, перейти на главную страницу" width="139" height="31">
+            </a>
+          </div>
+          <div class="page-footer__nav  nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">О компании</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Условия работы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Закупки</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Литература</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Карьера</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__row  page-footer__row--blue">
+        <div class="page-footer__container  container">
+          <p class="page-footer__copyright">© 2018 «Глобал Фудс»</p>
+          <a href="#" class="page-footer__agreement">Пользовательское соглашение</a>
+          <div class="page-footer__contacts  contacts">
+            <p class="contacts__phone">
+              <span>Центральный офис</span>
+              <a href="tel:+74957811144">+7 (495) 781-11-44</a>
+            </p>
+            <p class="contacts__mail">
+              <a href="mailto:info@globalfoods.ru">info@globalfoods.ru</a>
+            </p>
+          </div>
+          <ul class="page-footer__social  social">
+            <li class="social__item">
+              <a href="#" class="social__link  social__link--fb">
+                <span class="visually-hidden">мы на фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link  social__link--inst">
+                <span class="visually-hidden">мы в инстаграм</span>
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__developer">
+            <p>
+              Разработка сайта - 
+              <a href="https://artw.ru/">ARTW</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/picturefill-3.0.2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
