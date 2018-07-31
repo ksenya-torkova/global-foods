@@ -50,15 +50,53 @@ var mainFilterToggles = document.querySelectorAll('.filter__type');
 if (mainFilterToggles) {
   var mainFilters = document.querySelectorAll('.filter__type-list');
   
-  for (var i = 0; i < mainFilterToggles.length; i++) {
+  var deleteMainFilterActiveClass = function () {
+    var filterTypeActive = document.querySelector('.filter__type--active');
+    var filterListActive = document.querySelector('.filter__type-list--visible');
+
+    if (filterTypeActive !== null || filterListActive !== null) {
+      filterTypeActive.classList.remove('filter__type--active');
+      filterListActive.classList.remove('filter__type-list--visible');
+    }
+  };
+  
+  if (document.documentElement.clientWidth <= 1023) {
+    for (var i = 0; i < mainFilterToggles.length; i++) {
+      mainFilterToggles[i].setAttribute('data-index', i);
+
+      mainFilterToggles[i].addEventListener('click', function (evt) {
+        evt.preventDefault();
+        var mainFiltersIndex = evt.currentTarget.getAttribute('data-index');
+        this.classList.toggle('filter__type--active');
+        mainFilters[mainFiltersIndex].classList.toggle('filter__type-list--visible');
+      });
+    }
+  }
+  
+  if (document.documentElement.clientWidth > 1023) {
+    for (var i = 0; i < mainFilterToggles.length; i++) {
     mainFilterToggles[i].setAttribute('data-index', i);
     
     mainFilterToggles[i].addEventListener('click', function (evt) {
       evt.preventDefault();
+      deleteMainFilterActiveClass();
       var mainFiltersIndex = evt.currentTarget.getAttribute('data-index');
       this.classList.toggle('filter__type--active');
       mainFilters[mainFiltersIndex].classList.toggle('filter__type-list--visible');
     });
+  }
+  
+  var body = document.querySelector('body');
+
+  body.addEventListener('click', function(evt) {
+    var filterTypeActive = document.querySelector('.filter__type--active');
+    var filterListActive = document.querySelector('.filter__type-list--visible');
+    
+    if(!evt.target.matches('.filter__content *')) {
+      filterTypeActive.classList.remove('filter__type--active');
+      filterListActive.classList.remove('filter__type-list--visible');
+    }
+  });
   }
 }
 
@@ -83,6 +121,15 @@ if (mainSortingToggle) {
       mainSortingToggle.textContent = text;
     });
   }
+  
+  var body = document.querySelector('body');
+
+  body.addEventListener('click', function(evt) {
+    if(!evt.target.matches('.sorting *')) {
+      mainSortingToggle.classList.remove('sorting__toggle--active');
+      mainSortingList.classList.remove('sorting__options--visible');
+    }
+  });
 }
 
 // catalog navigation sublists open
@@ -112,6 +159,14 @@ if (searchFormToggle) {
   searchFormToggle.addEventListener('click', function (evt) {
     evt.preventDefault();
     searchForm.classList.toggle('search--open');
+  });
+  
+  var body = document.querySelector('body');
+  
+  body.addEventListener('click', function(evt) {
+    if(!evt.target.matches('.search *')) {
+      searchForm.classList.remove('search--open');
+    }
   });
 }
 
