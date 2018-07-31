@@ -3049,9 +3049,9 @@ input[type='checkbox']:disabled + .label::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 @media (min-width: 768px) {
   .catalog__quantity-btn {
@@ -3067,7 +3067,7 @@ input[type='checkbox']:disabled + .label::before {
 }
 @media (min-width: 1024px) {
   .catalog__quantity-btn:hover {
-    opacity: 0.5;
+    background-color: #ebebeb;
   }
 }
 .catalog__quantity-value {
